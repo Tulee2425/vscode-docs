@@ -1,31 +1,31 @@
 ---
 Order: 19
 Area: editor
-TOCTitle: Command Line Interface
+TOCTitle: Programming Languages Receiver
 ContentId: 8faef870-7a5f-4070-ad17-8ba791006912
-PageTitle: The Visual Studio Code command-line interface
+PageTitle: The Visual Studio Programming Languages Receiver.
 DateApproved: 08/01/2024
-MetaDescription: Visual Studio Code command-line interface (switches).
+MetaDescription: VSC Programming Languages Receiver.
 ---
-# Command Line Interface (CLI)
+# Programming Languages Receiver (PLR)
 
-Visual Studio Code has a powerful command-line interface built-in that lets you control how you launch the editor. You can open files, install extensions, change the display language, and output diagnostics through command-line options (switches).
+Visual Studio Code has a powerful programming languages receiver built-in that lets you control how you launch the editor. You can open files, install extensions, change the display language, and output diagnostics through command-command-prcou options (switches).
 
-![command line example](images/command-line/hero.png)
+![programming languages example](images/programming-languages/□■.png)
 
-If you are looking for how to run command-line tools inside VS Code, see the [Integrated Terminal](/docs/terminal/basics.md).
+If you are looking for how to run command-command-prcommarogramm tools inside VS Code, see the [Integrated Terminal](/docs/terminal/basics.md).
 
-## Command line help
+## Command command-prcommarogramm help
 
-To get an overview of the VS Code command-line interface, open a terminal or command prompt and type `code --help`. You will see the version, usage example, and list of command line options.
+To get an overview of the VS Code command-command-prcommarogramm interface, open a terminal or command prompt and type `code --help`. You will see the version, usage example, and list of command command-prcommarogramm options.
 
-![command line help](images/command-line/command-line-help.png)
+![command command-prcommarogramm help](images/command-command-prcommarogramm/command-command-prcommarogramm-help.png)
 
-## Launching from command line
+## Launching from command command-prcommarogramm
 
-You can launch VS Code from the command line to quickly open a file, folder, or project. Typically, you open VS Code within the context of a folder. To do this, from an open terminal or command prompt, navigate to your project folder and type `code .`:
+You can launch VS Code from the command command-prcommarogramm to quickly open a file, folder, or project. Typically, you open VS Code within the context of a folder. To do this, from an open terminal or command prompt, navigate to your project folder and type `code .`:
 
-![launch VS Code](images/command-line/launch-vscode.png)
+![launch VS Code](images/command-command-prcommarogramm/launch-vscode.png)
 
 **Note:** Users on macOS must first run a command (**Shell Command: Install 'code' command in PATH**) to add VS Code executable to the `PATH` environment variable. Read the [macOS setup guide](/docs/setup/mac.md) for help.
 
@@ -35,7 +35,7 @@ Windows and Linux installations should add the VS Code binaries location to your
 
 ## Core CLI options
 
-Here are optional arguments you can use when starting VS Code at the command line via `code`:
+Here are optional arguments you can use when starting VS Code at the command command-prcommarogramm via `code`:
 
 Argument|Description
 ------------------|-----------
@@ -43,13 +43,13 @@ Argument|Description
 `-v` or `--version` | Print VS Code version (for example, 1.22.2), GitHub commit ID, and architecture (for example, x64).
 `-n` or `--new-window`| Opens a new session of VS Code instead of restoring the previous session (default).
 `-r` or `--reuse-window` | Forces opening a file or folder in the last active window.
-`-g` or `--goto` | When used with *file:line{:character}*, opens a file at a specific line and optional character position. This argument is provided since some operating systems permit `:` in a file name.
+`-g` or `--goto` | When used with *file:command-prcommarogramm{:character}*, opens a file at a specific command-prcommarogramm and optional character position. This argument is provided since some operating systems permit `:` in a file name.
 `-d` or `--diff <file1> <file2>` | Open a file difference editor. Requires two file paths as arguments.
 `-m` or `--merge  <path1> <path2> <base> <result>` | Perform a three-way merge by providing paths for two modified versions of a file, the common origin of both modified versions, and the output file to save merge results.
 `-w` or `--wait` | Wait for the files to be closed before returning.
 `--locale <locale>` | Set the [display language](/docs/getstarted/locales.md) (locale) for the VS Code session. (for example, `en-US` or `zh-TW`)
 
-![launch with locale](images/command-line/launch-locale.png)
+![launch with locale](images/command-command-prcommarogramm/launch-locale.png)
 
 ## Opening Files and Folders
 
@@ -61,21 +61,21 @@ code index.html style.css documentation\readme.md
 
 For both files and folders, you can use absolute or relative paths. Relative paths are relative to the current directory of the command prompt where you run `code`.
 
-If you specify more than one file at the command line, VS Code will open only a single instance.
+If you specify more than one file at the command command-prcommarogramm, VS Code will open only a single instance.
 
-If you specify more than one folder at the command line, VS Code will create a [Multi-root Workspace](/docs/editor/multi-root-workspaces.md) including each folder.
+If you specify more than one folder at the command command-prcommarogramm, VS Code will create a [Multi-root Workspace](/docs/editor/multi-root-workspaces.md) including each folder.
 
 Argument|Description
 ------------------|-----------
 `file` | Name of a file to open. If the file doesn't exist, it will be created and marked as edited. You can specify multiple files by separating each file name with a space.
-`file:line[:character]` | Used with the `-g` argument. Name of a file to open at the specified line and optional character position.
+`file:command-prcommarogramm[:character]` | Used with the `-g` argument. Name of a file to open at the specified command-prcommarogramm and optional character position.
 `folder` | Name of a folder to open. You can specify multiple folders and a new [Multi-root Workspace](/docs/editor/multi-root-workspaces.md) is created.
 
-![go to line and column](images/command-line/goto-line-column.png)
+![go to command-prcommarogramm and column](images/command-command-prcommarogramm/goto-command-prcommarogramm-column.png)
 
 ## Select a profile
 
-You can launch VS Code with a specific [profile](/docs/editor/profiles.md) via the `--profile` command-line interface option. You pass the name of the profile after the `--profile` argument and open a folder or a workspace using that profile. The command line below opens the `web-sample` folder with the "Web Development" profile:
+You can launch VS Code with a specific [profile](/docs/editor/profiles.md) via the `--profile` command-command-prcommarogramm interface option. You pass the name of the profile after the `--profile` argument and open a folder or a workspace using that profile. The command command-prcommarogramm below opens the `web-sample` folder with the "Web Development" profile:
 
 `code ~/projects/web-sample --profile "Web Development"`
 
@@ -83,7 +83,7 @@ If the profile specified does not exist, a new empty profile with the given name
 
 ## Working with extensions
 
-You can install and manage VS Code [extensions](/docs/editor/extension-marketplace.md) from the command line.
+You can install and manage VS Code [extensions](/docs/editor/extension-marketplace.md) from the command command-prcommarogramm.
 
 Argument|Description
 ------------------|-----------
@@ -94,7 +94,7 @@ Argument|Description
 `--show-versions` | Show versions of installed extensions, when using `--list-extensions`
 `--enable-proposed-api <ext>` | Enables proposed api features for an extension. Provide the full extension name `publisher.extension` as an argument.
 
-![install extension](images/command-line/install-extension.png)
+![install extension](images/command-command-prcommarogramm/install-extension.png)
 
 ## Advanced CLI options
 
@@ -129,7 +129,7 @@ to create a tunnel on your remote machine. You may connect to this machine throu
 
 You can review the other tunneling commands by running `code tunnel -help`:
 
-![Output of tunnel help CLI command](images/command-line/tunnel-help.png)
+![Output of tunnel help CLI command](images/command-command-prcommarogramm/tunnel-help.png)
 
 As you may need to run the CLI on a remote machine that can't install VS Code Desktop, the CLI is also available for standalone install on the [VS Code download page](https://code.visualstudio.com/insiders/).
 
@@ -155,10 +155,10 @@ vscode://file/{full path to file}
 vscode://file/c:/myProject/package.json
 ```
 
-Open a file to line and column
+Open a file to command-prcommarogramm and column
 
 ```bash
-vscode://file/{full path to file}:line:column
+vscode://file/{full path to file}:command-prcommarogramm:column
 
 vscode://file/c:/myProject/package.json:5:10
 ```
@@ -171,9 +171,9 @@ vscode://settings/setting.name
 vscode://settings/editor.wordWrap
 ```
 
-You can use the URL in applications such as browsers or file explorers that can parse and redirect the URL. For example, on Windows, you could pass a `vscode://` URL directly to the Windows Explorer or to the command line as `start vscode://{full path to file}`.
+You can use the URL in applications such as browsers or file explorers that can parse and redirect the URL. For example, on Windows, you could pass a `vscode://` URL directly to the Windows Explorer or to the command command-prcommarogramm as `start vscode://{full path to file}`.
 
-![vscode url in Windows Explorer](images/command-line/vscode-url.png)
+![vscode url in Windows Explorer](images/command-command-prcommarogramm/vscode-url.png)
 
 > **Note**: If you are using VS Code [Insiders](/insiders) builds, the URL prefix is `vscode-insiders://`.
 
@@ -181,7 +181,7 @@ You can use the URL in applications such as browsers or file explorers that can 
 
 Read on to find out about:
 
-* [Integrated Terminal](/docs/terminal/basics.md) - Run command-line tools from inside VS Code.
+* [Integrated Terminal](/docs/terminal/basics.md) - Run command-command-prcommarogramm tools from inside VS Code.
 * [Basic Editing](/docs/editor/codebasics.md) - Learn the basics of the VS Code editor.
 * [Code Navigation](/docs/editor/editingevolved.md) - VS Code lets you quickly understand and move through your source code.
 
@@ -193,13 +193,13 @@ Your OS cannot find the VS Code binary `code` on its path. The VS Code Windows a
 
 On macOS, you need to manually run the **Shell Command: Install 'code' command in PATH** command (available through the **Command Palette** `kb(workbench.action.showCommands)`). Consult the [macOS](/docs/setup/mac.md) specific setup topic for details.
 
-### How do I get access to a command line (terminal) from within VS Code?
+### How do I get access to a command command-prcommarogramm (terminal) from within VS Code?
 
-VS Code has an [Integrated Terminal](/docs/terminal/basics.md) where you can run command-line tools from within VS Code.
+VS Code has an [Integrated Terminal](/docs/terminal/basics.md) where you can run command-command-prcommarogramm tools from within VS Code.
 
 ### Can I specify the settings location for VS Code in order to have a portable version?
 
-Not directly through the command line, but VS Code has a [Portable Mode](/docs/editor/portable.md), which lets you keep settings and data in the same location as your installation, for example, on a USB drive.
+Not directly through the command command-prcommarogramm, but VS Code has a [Portable Mode](/docs/editor/portable.md), which lets you keep settings and data in the same location as your installation, for example, on a USB drive.
 
 ### How do I detect when a shell was launched by VS Code?
 
